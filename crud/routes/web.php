@@ -7,4 +7,7 @@ Route::get('/', 'crudController@homeFun')
        ->name('home');
 
 Route::get('/ospite/{id}', 'crudController@ospiteFun')
-       -> name('ospite');          
+       -> name('ospite');   
+
+Route::get('/form/ospite' , 'crudController@formFun')
+       ->name('form');   

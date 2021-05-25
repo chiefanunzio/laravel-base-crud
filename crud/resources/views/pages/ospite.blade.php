@@ -8,3 +8,4 @@
         <li>Data DI Nascita:{{$ospite->date_of_birth}}<h5></h5></li>
     </ul>
 </div>            
+<span><a href="{{route('home')}}">torna alla homepage</a></span>   

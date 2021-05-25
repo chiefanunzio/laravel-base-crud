@@ -20,5 +20,10 @@ class crudController extends Controller
             'ospite'
         ));   
     }   
+      
+    public function formFun(){
+
+        return view('pages.form');
+    }
 }   
       
