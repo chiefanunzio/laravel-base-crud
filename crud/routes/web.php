@@ -11,3 +11,6 @@ Route::get('/ospite/{id}', 'crudController@ospiteFun')
 
 Route::get('/form/ospite' , 'crudController@formFun')
        ->name('form');   
+
+Route::post('/add-db/ospite','crudController@dbFun')   
+       ->name('add-db');         

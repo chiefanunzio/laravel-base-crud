@@ -22,8 +22,24 @@ class crudController extends Controller
     }   
       
     public function formFun(){
-
+ 
         return view('pages.form');
     }
+   
+    public function dbFun(Request $request){   
+
+         $validate = $request -> validate([
+
+            'name' => 'nullable' ,
+            'lastname' => 'nullable', 
+            'document_type' => 'nullable' ,   
+            'document_number' => 'nullable' ,
+            'date_of_birth' => 'nullable' ,
+   
+         ]);
+            
+           
+        dd($validate);   
+    }
 }   
-      
+         

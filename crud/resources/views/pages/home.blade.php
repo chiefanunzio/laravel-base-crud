@@ -3,7 +3,7 @@
        
 
 <h1>homepage</h1>
-
+<a href="{{route('form')}}">nuovo ospite</a>     
 <div>
     <h2>ospiti:</h2>
     <ul>

@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
