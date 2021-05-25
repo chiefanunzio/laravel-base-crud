@@ -24,7 +24,7 @@ class crudController extends Controller
     public function formFun(){
  
         return view('pages.form');
-    }
+    }   
    
     public function dbFun(Request $request){   
 
@@ -37,9 +37,9 @@ class crudController extends Controller
             'date_of_birth' => 'nullable' ,
    
          ]);
-            
-           
-        dd($validate);   
+        
+         $addDB = Ospite::create($validate);             
+        return redirect() -> route('ospite',$addDB ->id );      
     }
 }   
-         
+                              
